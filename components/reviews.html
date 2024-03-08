@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gator Food Court - Reviews</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styling/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="menu.html">Menu</a>
+        <a href="shop.html">Shop</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="specials.html">Specials</a>
+      </nav>
+      <div class="account-icon">
+        <a href="login.html">&#128100;</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="reviews" class="reviews-container">
+        <div class="container">
+          <h1>Order History & Feedback</h1>
+
+          <section class="review-section order-history">
+            <h2>List of Previous Orders</h2>
+            <ul class="review-list">
+              <li>Order 1: 05/10/23 HALAL SHOP - 1 TIKKA OVER RICE</li>
+              <li>Order 2: 05/01/23 QUICKLY - 1 MANGO BOBA AND ICED TEA</li>
+              <li>Order 3: 04/28/23 SUBWAY - 1 FOOTLONG MEAL</li>
+            </ul>
+          </section>
+
+          <form class="review-form">
+            <h2>Add Review</h2>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+              <option value="1">1 Star</option>
+              <option value="2">2 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="5">5 Stars</option>
+            </select>
+            <br />
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" rows="5"></textarea>
+            <br />
+            <button type="submit">Submit Review</button>
+          </form>
+
+          <div class="review-section">
+            <h2>Reviews</h2>
+            <ul class="review-list">
+              <li>
+                <div class="rating">4 Stars</div>
+                <div class="review">
+                  The Tikka over rice was delicious and the price for the
+                  quantity was great!
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Gator Food Court. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
